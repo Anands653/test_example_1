@@ -8,8 +8,8 @@ package com.example.one;
 
 		public class HelloAmazon 
 		{
-//	invalid given title	public static String given_title = "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp; more";
-		public static String given_title = "Amazon.co.uk";		
+		public static String given_title = "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment &amp; more";
+	//	public static String given_title = "Amazon.co.uk";	
 		public static void main(String[] args)
 		{
 	        WebDriver driver = new ChromeDriver();

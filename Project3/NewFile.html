@@ -52,10 +52,15 @@ font-family: arial;
 
 <h2>Chapter 2</h2>
 <p>This chapter explains ba bla bla</p>
-<ol>
+<ol type="i">
     <li>To start</li>
     <li>To phase</li>
+    <ol>
+    <li>To wait</li>
+    <li>To think</li>
+    </ol>
     <li>To end</li>
+    <!-- type="a or A or 1 or i or I" used for ordered list -->
     
 </ol>
 
@@ -91,7 +96,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-}
+  }
 
 td, th {
   border: 1px solid #dddddd;
@@ -118,6 +123,11 @@ tr:nth-child(even) {
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
+  <!-- table Defines a table -->
+  <!-- th Defines a header cell in a table -->
+  <!-- tr Defines a row in a table -->
+  <!-- td Defines a cell in a table -->
+  <!-- tr Defines a row in a table -->
   <tr>
     <td>Baker</td>
     <td>Anand</td>

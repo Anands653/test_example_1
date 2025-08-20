@@ -2,15 +2,34 @@
 <html>
 <head>
 <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 h1{
 color: dodgerblue;
 
 font-family: arial;
 	
 }
+.one{
+ color: tomato;
+}
+ <!-- class created as one-->
 </Style>
 <meta charset="UTF-8">
-<title>My first HTML</title>
+<title>Anand's first HTML</title>
 </head>
 <body>
 
@@ -43,32 +62,59 @@ font-family: arial;
 
 <h2>Chapter 1</h2>
 <p>This chapter explains ba bla bla</p>
-<ul>
-    <li>To start</li>
-    <li>To phase</li>
-    <li>To end</li>
+<ul style="list-style-type:square;">
+    <li>Credit card</li>
+    <li>Loan</li>
+    <li>Friends</li>
     <!-- ul used for unorderedlist and ol used for ordered list -->
+    <!-- list style type: disc,circle,square and none -->
 </ul>
+<dl>
+    <dt>Credit card</dt>
+    	<dd>- DBS</dd>
+    	<dd>- CITI Bank</dd>
+    <dt>Loan</dt>
+    	<dd>- Cashline</dd>
+    
+    <!-- dl element to define a description list -->
+    <!-- dt element to define a description term-->
+    <!-- dd element to describe the term in a description list -->
+    
+</dl>
 
+<div style="background-color:lightgreen;color:blue;padding:10px;">
 <h2>Chapter 2</h2>
 <p>This chapter explains ba bla bla</p>
-<ol>
+<ol type="i">
     <li>To start</li>
     <li>To phase</li>
+   	 	<ol start="100">
+    		<li> Test</li>
+    		<li> Verify</li>
+    		<li> Release</li>
+    	</ol>
     <li>To end</li>
-    
+    <!-- list type: 1,A,a,i and I -->
+    <!-- list can be nested -->
+    <!-- list start can be specified: start="any number" -->
+    <!-- div is used as a container for to block a style -->
 </ol>
-
+</div>
 <h2>Chapter 3</h2>
-<p>This chapter explains<br> ba bla bla</p>
+<p>This chapter explains<br><span style="border:1px solid red;color:blue;font-weight:bold"> Water = H<sub>2</sub>O </span>and 10<sup>2</sup> = 100</p>
+<!-- span is an inline container used to mark a part of text -->
 <!-- br used for line brake -->
+<!-- sub used for sub script -->
+<!-- sup used for super script -->
 
 <h2 id="C4">Chapter 4</h2>
 <p>This <em>CHAPTER</em> explains<strong> Good</strong> ba bla bla</p>
 <!-- em in italics and strong in Bold -->
-<h2>Chapter 5</h2>
+<h2 class="one">Chapter 5</h2>
 <p>This <i>CHAPTER</i> explains<b> Good</b> ba bla bla</p>
-<!-- i display text in italic and b displayed in Bold -->
+	<!-- i display text in italic and b displayed in Bold -->
+	<!-- class  created as one and used in heading -->
+
 <h2 id="C6">Chapter 6</h2>
 <p>This chapter explains ba bla bla</p>
 
@@ -84,25 +130,8 @@ font-family: arial;
 <h2 id="C10">Chapter 10</h2>
 <p>This chapter explains ba bla bla</p>
 
-</style>
 
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
 </head>
 <body>
 
@@ -119,7 +148,7 @@ tr:nth-child(even) {
     <td>Germany</td>
   </tr>
   <tr>
-    <td>Baker</td>
+    <td>Baker Hughe</td>
     <td>Anand</td>
     <td>SG</td>
   </tr>

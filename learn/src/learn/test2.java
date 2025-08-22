@@ -5,7 +5,7 @@ public class test2
 {
 public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-	String s = sc.nextLine();
+	String s = sc.nextLine();// Read a line of input from the user
 	
 	if(s.equals("tim")) {
 		System.out.println("You type tim");
@@ -17,6 +17,6 @@ public static void main(String[] args) {
 	else {
 		System.out.println("Print");	
 	}
-	
+	sc.close();// Always close scanner
 }
 }

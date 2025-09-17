@@ -27,13 +27,14 @@ public class Home {
 				//Thread.sleep(30000);
 				System.out.println("wait finished");
 				
+			
+				
 				// find the button and click Mobile & Tablets
 				driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/div[1]/div/div[1]/div/div/div/div/div[1]/a[2]/div/div")).click();
 			
 				//driver will wait for 30 seconds to do next action
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-				//Thread.sleep(30000);
 				System.out.println("Iphone clicked");
 
 				//driver will wait for 30 seconds to do next action

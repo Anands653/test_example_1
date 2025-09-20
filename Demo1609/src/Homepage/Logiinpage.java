@@ -21,7 +21,7 @@ public void openloginPage()
             driver.manage().window().maximize();
             
             // driver will wait for 30 sec to do the next step
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
      
             
          // find the button and click

@@ -6,6 +6,7 @@
       <class name="main.LoginTest"/>
       <class name="main.Demo2"/>
       <class name="main.Demo3"/>
+      <class name="main.LoginTest1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T18:31:03 BST" name="Default suite" finished-at="2025-09-20T18:31:11 BST" duration-ms="8010">
+  <suite started-at="2025-09-21T16:17:14 BST" name="Default suite" finished-at="2025-09-21T16:17:30 BST" duration-ms="16458">
     <groups>
     </groups>
-    <test started-at="2025-09-20T18:31:03 BST" name="Default test" finished-at="2025-09-20T18:31:11 BST" duration-ms="8010">
-      <class name="main.LoginTest">
-        <test-method signature="openLoginPage()[pri:0, instance:main.LoginTest@6b2ea799]" started-at="2025-09-20T18:31:03 BST" name="openLoginPage" finished-at="2025-09-20T18:31:09 BST" duration-ms="5932" status="PASS">
+    <test started-at="2025-09-21T16:17:14 BST" name="Default test" finished-at="2025-09-21T16:17:30 BST" duration-ms="16458">
+      <class name="main.LoginTest1">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:14 BST" name="setUp" finished-at="2025-09-21T16:17:16 BST" duration-ms="1842" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openLoginPage -->
-        <test-method signature="testWithEmptyfields()[pri:0, instance:main.LoginTest@6b2ea799]" started-at="2025-09-20T18:31:09 BST" name="testWithEmptyfields" finished-at="2025-09-20T18:31:10 BST" duration-ms="1122" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="openLoginPage1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:16 BST" name="openLoginPage1" finished-at="2025-09-21T16:17:19 BST" duration-ms="3414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage1 -->
+        <test-method signature="testLoginPageTitle1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:19 BST" name="testLoginPageTitle1" finished-at="2025-09-21T16:17:19 BST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle1 -->
+        <test-method is-config="true" signature="openLoginPage1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:19 BST" name="openLoginPage1" finished-at="2025-09-21T16:17:30 BST" duration-ms="11093" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[element click intercepted: Element <input id="loginNow" type="submit" value="Log In"> is not clickable at point (675, 548). Other element would receive the click: <div id="onetrust-policy-text">...</div>
-  (Session info: chrome=140.0.7339.129)
+              <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb811bc0899365f025c86790e69ce40e, clickElement {id=f.B58374C513CBE4B38ED7FE18DFCB68BC.d.BA6A69818EC13CC0153CA0F9DDBDF960.e.9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57006/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cb811bc0899365f025c86790e69ce40e)] -> id: loginNow]
-Session ID: cb811bc0899365f025c86790e69ce40e]]>
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="loginNow" type="submit" value="Log In"> is not clickable at point (675, 548). Other element would receive the click: <div id="onetrust-policy-text">...</div>
-  (Session info: chrome=140.0.7339.129)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb811bc0899365f025c86790e69ce40e, clickElement {id=f.B58374C513CBE4B38ED7FE18DFCB68BC.d.BA6A69818EC13CC0153CA0F9DDBDF960.e.9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57006/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cb811bc0899365f025c86790e69ce40e)] -> id: loginNow]
-Session ID: cb811bc0899365f025c86790e69ce40e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at main.LoginTest.testWithEmptyfields(LoginTest.java:47)
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at main.LoginTest1.openLoginPage1(LoginTest1.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -73,29 +74,85 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:967)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWithEmptyfields -->
-        <test-method signature="testWithUserNameAndPasswordInput()[pri:0, instance:main.LoginTest@6b2ea799]" started-at="2025-09-20T18:31:10 BST" name="testWithUserNameAndPasswordInput" finished-at="2025-09-20T18:31:10 BST" duration-ms="155" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- openLoginPage1 -->
+        <test-method signature="testWithEmptyFields1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="testWithEmptyFields1" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[expected [] but found [Captcha is required.]]]>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [Captcha is required.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at main.LoginTest.testWithUserNameAndPasswordInput(LoginTest.java:96)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at main.LoginTest1.openLoginPage1(LoginTest1.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -118,54 +175,89 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:967)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWithUserNameAndPasswordInput -->
-        <test-method signature="testWithUserNameInput()[pri:0, instance:main.LoginTest@6b2ea799]" started-at="2025-09-20T18:31:10 BST" name="testWithUserNameInput" finished-at="2025-09-20T18:31:11 BST" duration-ms="723" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        </test-method> <!-- testWithEmptyFields1 -->
+        <test-method is-config="true" signature="openLoginPage1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="openLoginPage1" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage1 -->
+        <test-method signature="testWithUserNameAndPassword1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="testWithUserNameAndPassword1" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=140.0.7339.129)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb811bc0899365f025c86790e69ce40e, getElementText {id=f.B58374C513CBE4B38ED7FE18DFCB68BC.d.BA6A69818EC13CC0153CA0F9DDBDF960.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57006/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cb811bc0899365f025c86790e69ce40e)] -> id: passwordValidationMessage]
-Session ID: cb811bc0899365f025c86790e69ce40e]]>
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=140.0.7339.129)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb811bc0899365f025c86790e69ce40e, getElementText {id=f.B58374C513CBE4B38ED7FE18DFCB68BC.d.BA6A69818EC13CC0153CA0F9DDBDF960.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57006/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cb811bc0899365f025c86790e69ce40e)] -> id: passwordValidationMessage]
-Session ID: cb811bc0899365f025c86790e69ce40e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-at main.LoginTest.testWithUserNameInput(LoginTest.java:74)
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at main.LoginTest1.openLoginPage1(LoginTest1.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -188,13 +280,162 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:967)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWithUserNameInput -->
-      </class> <!-- main.LoginTest -->
+        </test-method> <!-- testWithUserNameAndPassword1 -->
+        <test-method signature="testWithUserNameOnly1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="testWithUserNameOnly1" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba01746ebcbb4ad0332f43bc27ab89c, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64141/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fba01746ebcbb4ad0332f43bc27ab89c
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:584)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at main.LoginTest1.openLoginPage1(LoginTest1.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:967)
+at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
+... 8 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
+at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+... 3 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1470)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1415)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1415)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithUserNameOnly1 -->
+        <test-method is-config="true" signature="openLoginPage1()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="openLoginPage1" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:main.LoginTest1@15de0b3c]" started-at="2025-09-21T16:17:30 BST" name="tearDown" finished-at="2025-09-21T16:17:30 BST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.LoginTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

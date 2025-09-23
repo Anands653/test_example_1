@@ -2,9 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Demo20925">
-  <packages>
-  		<package name="main.HomePage"/>
-  		<package name="main.electronics.ElectronicsPage"/>
-  </packages>
+  <classes>
+  		<class name="main.HomePage"/>
+  		<class name="main.electronics.ElectronicsPage"/>
+  		<class name="main.SingnInTestPage"/>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="main.LoginTest">
+      <class name="main.LoginTest1">
         <methods>
-          <include name="testWithEmptyfields"/>
-          <include name="testWithUserNameAndPasswordInput"/>
-          <include name="testWithUserNameInput"/>
+          <include name="testWithUserNameAndPassword1"/>
+          <include name="tearDown"/>
+          <include name="openLoginPage1"/>
+          <include name="testWithEmptyFields1"/>
+          <include name="setUp"/>
+          <include name="testWithUserNameOnly1"/>
         </methods>
-      </class> <!-- main.LoginTest -->
+      </class> <!-- main.LoginTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

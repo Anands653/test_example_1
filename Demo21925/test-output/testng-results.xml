@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-06T10:05:48 BST" name="Parametarised Test Suite" finished-at="2025-10-06T10:05:56 BST" duration-ms="8476">
+    <groups>
+    </groups>
+    <test started-at="2025-10-06T10:05:48 BST" name="WebDriver Test" finished-at="2025-10-06T10:05:56 BST" duration-ms="8476">
+      <class name="TestNGParameter.ParameterTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:48 BST" name="setUp" finished-at="2025-10-06T10:05:49 BST" duration-ms="1392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getTitle()[pri:1, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:49 BST" name="getTitle" finished-at="2025-10-06T10:05:49 BST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method signature="getURL(java.lang.String)[pri:1, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:49 BST" name="getURL" finished-at="2025-10-06T10:05:51 BST" duration-ms="2092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.geeksforgeeks.org/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+        <test-method signature="getPythonURL(java.lang.String)[pri:2, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:51 BST" name="getPythonURL" finished-at="2025-10-06T10:05:56 BST" duration-ms="4764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.geeksforgeeks.org/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPythonURL -->
+        <test-method signature="getTitle2()[pri:2, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:56 BST" name="getTitle2" finished-at="2025-10-06T10:05:56 BST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle2 -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestNGParameter.ParameterTest@6989da5e]" started-at="2025-10-06T10:05:56 BST" name="close" finished-at="2025-10-06T10:05:56 BST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNGParameter.ParameterTest -->
+    </test> <!-- WebDriver Test -->
+  </suite> <!-- Parametarised Test Suite -->
+</testng-results>

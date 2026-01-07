@@ -9,13 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Parametarised Test Suite</th></tr>
-<tr><td><a href="#t0">WebDriver Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,476</td><td></td><td></td></tr>
+<tr><td><a href="#t0">WebDriver Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">83</td><td>smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parametarised Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">WebDriver Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestNGParameter.ParameterTest</td><td><a href="#m0">getPythonURL</a></td><td rowspan="1">1759741551659</td><td rowspan="1">4764</td></tr><tr class="passedeven"><td><a href="#m1">getTitle</a></td><td rowspan="1">1759741549542</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m2">getTitle2</a></td><td rowspan="1">1759741556427</td><td rowspan="1">21</td></tr><tr class="passedeven"><td><a href="#m3">getURL</a></td><td rowspan="1">1759741549562</td><td rowspan="1">2092</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parametarised Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">WebDriver Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testNGParameter.ParameterTest1</td><td><a href="#m0">get1Title</a></td><td rowspan="1">1764769703953</td><td rowspan="1">17</td></tr><tr class="failedeven"><td><a href="#m1">get1URL</a></td><td rowspan="1">1764769703984</td><td rowspan="1">3</td></tr></tbody>
 </table>
-<h2>WebDriver Test</h2><h3 id="m0">TestNGParameter.ParameterTest#getPythonURL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://www.geeksforgeeks.org/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestNGParameter.ParameterTest#getTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestNGParameter.ParameterTest#getTitle2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestNGParameter.ParameterTest#getURL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://www.geeksforgeeks.org/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>WebDriver Test</h2><h3 id="m0">testNGParameter.ParameterTest1#get1Title</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at testNGParameter.ParameterTest1.get1Title(ParameterTest1.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNGParameter.ParameterTest1#get1URL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://www.geeksforgeeks.org/</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at testNGParameter.ParameterTest1.get1URL(ParameterTest1.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

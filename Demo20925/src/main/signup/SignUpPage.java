@@ -22,10 +22,10 @@ public class SignUpPage
 		driver.manage().window().maximize();
 		driver.get(URL);
 		
-		 // driver will wait for 30 sec to do the next step
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		
 
-	    
+	     // driver will wait for 30 sec to do the next step
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 	    // find the button and click
 	    	driver.findElement(By.id("gdpr-banner-accept")).click();
 		

@@ -4,14 +4,18 @@
   <test thread-count="5" name="WebDriver Test(failed)">
     <parameter name="URL" value="https://www.geeksforgeeks.org/"/>
     <parameter name="Browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TestNGParameter.ParameterTest">
+      <class name="testNGParameter.ParameterTest1">
         <methods>
-          <include name="close"/>
-          <include name="setUp"/>
-          <include name="getPythonURL"/>
+          <include name="get1Title"/>
+          <include name="get1URL" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestNGParameter.ParameterTest -->
+      </class> <!-- testNGParameter.ParameterTest1 -->
     </classes>
   </test> <!-- WebDriver Test(failed) -->
 </suite> <!-- Failed suite [Parametarised Test Suite] -->

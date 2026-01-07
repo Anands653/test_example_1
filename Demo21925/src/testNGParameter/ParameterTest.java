@@ -1,6 +1,4 @@
-package TestNGParameter;
-
-import java.time.Duration;
+package testNGParameter;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,36 +26,30 @@ public class ParameterTest {
 	 } 
 	 
 	 // Test method to retrieve and print the title of the webpage.
-	 @Test(priority = 1) 
+	 @Test(priority = 2) 
 	 public void getTitle() { 
-	     String title = driver.getTitle(); 
+		 String title = driver.getTitle(); 
 	     System.out.println("Title of Webpage: " + title); 
 	 } 
 	 
-	 
-	 	
-	// https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
+	 // https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
 	 static String PYTHONENDPOINT = "python/python-programming-language-tutorial/"; 
 	 @Parameters({"URL"})
-	 @Test(priority = 2)
+	 @Test(priority = 3)
 	 public void getPythonURL(String URL) { 
 	     driver.get(URL+PYTHONENDPOINT); 
 	 } 
 	// Test method to retrieve and print the title of the webpage.
-		 @Test(priority = 2) 
+		 @Test(priority = 4) 
 		 public void getTitle2() { 
-		     String title2 = driver.getTitle(); 
-		     System.out.println("Title2 of the Webpage: " + title2); 
-		     
-		 } 
+		    String title2 = driver.getTitle(); 
+		     System.out.println("Title of the Webpage: " + title2); 
+		} 
 		 
 	 // Close method to quit the WebDriver after tests are executed.
 	 @AfterTest 
 	 public void close() {
-		 // driver will wait for 30 sec to do the next step
-		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		
-	     driver.close(); 
+     driver.close(); 
 	 } 
 	}
 
